@@ -5,9 +5,16 @@ description = "A Discord Bot with the intention of acting as a relay to send mes
 authors = [
     {name = "Colby Hillman",email = "colby.hillman@gmail.com"}
 ]
+packages = [
+    { include = "message_relay", from = "src" }
+]
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
+    "dotenv (>=0.9.9,<0.10.0)",
+    "discord (>=2.3.2,<3.0.0)",
+    "httpx (>=0.28.1,<0.29.0)",
+    "logging (>=0.4.9.6,<0.5.0.0)"
 ]
 
 
