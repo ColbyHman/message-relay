@@ -6,4 +6,5 @@ services:
       dockerfile: Dockerfile
     environment:
       - DISCORD_TOKEN=${DISCORD_TOKEN}
+      - WEBHOOK_URL=${WEBHOOK_URL}
     restart: unless-stopped
